@@ -11,8 +11,8 @@ import json
 from csv import writer
 
 #connection to firebase
-firebase_sdk = credentials.Certificate('esp32-fa505-firebase-adminsdk-6t48r-674dbcbfd8.json')
-firebase_admin.initialize_app(firebase_sdk,{'databaseURL':'https://esp32-fa505-default-rtdb.firebaseio.com/'})
+firebase_sdk = credentials.Certificate('YOUR_FIREBASE_CREDENTIALS')
+firebase_admin.initialize_app(firebase_sdk,{'databaseURL':'YOUR_URL_DATABSE'})
 
 
 #Function that subscribes to the breaker with the username
@@ -46,10 +46,10 @@ def on_message(client, userdata, message):
 
 #Connection to PAHO MQTT breaker
 def main():
-    client = paho.mqtt.client.Client(client_id='Jaime', clean_session= False)
+    client = paho.mqtt.client.Client(client_id='YOUR_USERNAME', clean_session= False)
     client.on_connect = on_connect
     client.on_message = on_message
-    client.connect(host='127.0.0.1', port=1883)
+    client.connect(host='YOUR_IP', port=1883)
     client.loop_forever()
 
 
