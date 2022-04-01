@@ -7,7 +7,7 @@ import paho.mqtt.client as mqtt
 #Example function of sending a message to the breaker
 def main():
     client = mqtt.Client()
-    client.connect(host='127.0.0.1', port=1883)
+    client.connect(host='YOUR_IP', port=1883)
     client.publish('Prueba', '{temperatura:20,lugar:DH}')
 
 
