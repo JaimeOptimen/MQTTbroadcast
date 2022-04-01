@@ -25,5 +25,6 @@ Within the menu we go to the Realtime Database section at the top of our table a
 
 
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/102833881/161351821-83520fd6-08fb-44e5-9eed-c47a66439894.png" /> 
-</p>
+  <img src="https://user-images.githubusercontent.com/102833881/161352291-169c5808-bdba-4e29-95d4-e75545aa4e5e.png" /> 
+
+
